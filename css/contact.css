@@ -1,0 +1,305 @@
+/* =========================================================
+   KASYVEN — CONTACT PAGE
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   CONTACT HERO
+--------------------------------------------------------- */
+
+.contact-hero {
+    padding: 150px 0 110px;
+    border-bottom: 1px solid var(--line);
+}
+
+.contact-hero-inner {
+    max-width: 900px;
+}
+
+.contact-eyebrow {
+    margin-bottom: 24px;
+    font-family: "DM Mono", monospace;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+}
+
+.contact-title {
+    max-width: 850px;
+    margin: 0;
+    font-family: "Syne", sans-serif;
+    font-size: clamp(3.5rem, 8vw, 7.5rem);
+    line-height: 0.92;
+    font-weight: 600;
+    letter-spacing: -0.055em;
+}
+
+.contact-intro {
+    max-width: 620px;
+    margin-top: 42px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--muted);
+}
+
+
+/* ---------------------------------------------------------
+   CONTACT DETAILS
+--------------------------------------------------------- */
+
+.contact-details {
+    padding: 90px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.contact-label {
+    margin-bottom: 18px;
+    font-family: "DM Mono", monospace;
+    font-size: 0.7rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+}
+
+.contact-email {
+    display: inline-block;
+    font-family: "Syne", sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.4rem);
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 5px;
+    transition:
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.contact-email:hover {
+    color: var(--muted);
+    border-color: var(--muted);
+}
+
+.contact-location {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ink);
+}
+
+
+/* ---------------------------------------------------------
+   PROJECT INFO
+--------------------------------------------------------- */
+
+.contact-project {
+    padding: 100px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.contact-project-inner {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 100px;
+}
+
+.contact-project-title {
+    margin: 0;
+    font-family: "Syne", sans-serif;
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
+}
+
+.contact-project-copy {
+    max-width: 650px;
+}
+
+.contact-project-copy p {
+    margin: 0 0 30px;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--muted);
+}
+
+.contact-prompts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-top: 45px;
+    border-top: 1px solid var(--line);
+}
+
+.contact-prompt {
+    padding: 24px 20px 24px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.contact-prompt:nth-child(even) {
+    padding-left: 20px;
+    border-left: 1px solid var(--line);
+}
+
+.contact-prompt-number {
+    display: block;
+    margin-bottom: 12px;
+    font-family: "DM Mono", monospace;
+    font-size: 0.68rem;
+    color: var(--soft);
+}
+
+.contact-prompt-text {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--ink);
+}
+
+
+/* ---------------------------------------------------------
+   EMAIL CTA
+--------------------------------------------------------- */
+
+.contact-cta {
+    padding: 120px 0;
+}
+
+.contact-cta-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contact-cta-title {
+    max-width: 700px;
+    margin: 0;
+    font-family: "Syne", sans-serif;
+    font-size: clamp(2.8rem, 6vw, 6rem);
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+}
+
+.contact-cta-action {
+    flex-shrink: 0;
+}
+
+.contact-cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 17px 24px;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: "Manrope", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.contact-cta-link:hover {
+    background: var(--accent);
+    color: var(--ink);
+    transform: translateY(-3px);
+}
+
+.contact-cta-arrow {
+    font-size: 1rem;
+}
+
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+--------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .contact-hero {
+        padding: 120px 0 85px;
+    }
+
+    .contact-grid {
+        gap: 50px;
+    }
+
+    .contact-project-inner {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .contact-cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+
+    .contact-hero {
+        padding: 100px 0 70px;
+    }
+
+    .contact-title {
+        font-size: clamp(3rem, 15vw, 5rem);
+    }
+
+    .contact-intro {
+        margin-top: 30px;
+        font-size: 1rem;
+    }
+
+    .contact-details {
+        padding: 65px 0;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .contact-email {
+        font-size: 1.35rem;
+    }
+
+    .contact-project {
+        padding: 70px 0;
+    }
+
+    .contact-prompts {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-prompt,
+    .contact-prompt:nth-child(even) {
+        padding: 20px 0;
+        border-left: none;
+    }
+
+    .contact-cta {
+        padding: 80px 0;
+    }
+
+    .contact-cta-title {
+        font-size: clamp(2.7rem, 13vw, 4rem);
+    }
+
+    .contact-cta-link {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
