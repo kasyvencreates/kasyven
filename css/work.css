@@ -1,439 +1,170 @@
-.work-hero {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+﻿.inner-page {
+  max-width: 1440px;
+  margin: auto;
 }
 
-.work-hero-content {
-    max-width: 1050px;
-    margin-top: 120px;
+.page-hero {
+  min-height: 75vh;
+  padding: 100px var(--pad);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.work-title {
-    margin: 34px 0 0;
-    font-family: "Syne", sans-serif;
-    font-size: clamp(4rem, 8.5vw, 9rem);
-    line-height: 0.88;
-    letter-spacing: -0.055em;
-    font-weight: 600;
+.page-hero h1 {
+  font-family: "Syne", sans-serif;
+  font-size: clamp(68px, 10vw, 155px);
+  line-height: .85;
+  letter-spacing: -.075em;
+  font-weight: 600;
 }
 
-.work-title em {
-    font-style: normal;
-    color: var(--muted);
+.page-hero h1 em {
+  font-style: italic;
+  font-weight: 400;
 }
 
-.work-intro {
-    max-width: 530px;
-    margin: 55px 0 0 min(32vw, 390px);
-    color: var(--muted);
-    font-size: 1.05rem;
-    line-height: 1.7;
+.page-hero p {
+  max-width: 500px;
+  font-size: 17px;
+  line-height: 1.65;
+  align-self: end;
 }
 
-.featured-project {
-    padding-top: 100px;
+.work-item {
+  padding: 120px var(--pad);
 }
 
-.featured-project-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 50px;
-    margin-bottom: 55px;
+.work-number {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  margin-bottom: 25px;
 }
 
-.featured-project-heading h2 {
-    margin: 25px 0 0;
-    font-family: "Syne", sans-serif;
-    font-size: clamp(3.5rem, 7vw, 7rem);
-    line-height: 0.85;
-    letter-spacing: -0.055em;
-    font-weight: 500;
+.work-browser {
+  background: var(--clay);
+  padding: 15px;
 }
 
-.featured-project-heading > p {
-    max-width: 270px;
-    margin: 0;
-    color: var(--muted);
-    line-height: 1.6;
-    font-size: 0.9rem;
+.work-browser .browser-bar {
+  height: 45px;
 }
 
-.featured-browser {
-    width: 100%;
+.work-browser-content {
+  min-height: 650px;
+  background: var(--warm-white);
+  padding: 10vw 8vw;
 }
 
-.browser-frame {
-    overflow: hidden;
-    border: 1px solid var(--line-strong);
-    background: #fff;
-    box-shadow: 0 30px 80px rgba(17, 17, 15, 0.08);
+.work-browser-content small,
+.work-info span,
+.tags span,
+.work-note span {
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
-.browser-bar {
-    height: 48px;
-    display: flex;
-    align-items: center;
+.work-browser-content h2 {
+  font-family: "Syne", sans-serif;
+  font-size: clamp(60px, 9vw, 130px);
+  line-height: .83;
+  letter-spacing: -.075em;
+  margin: 35px 0 50px;
+}
+
+.work-browser-content h2 em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.fake-cta {
+  display: inline-block;
+  border: 1px solid var(--ink);
+  padding: 13px 18px;
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+}
+
+.work-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  padding-top: 28px;
+}
+
+.work-info h2 {
+  font-family: "Syne", sans-serif;
+  font-size: 35px;
+  margin-top: 8px;
+}
+
+.work-info p {
+  font-size: 15px;
+  max-width: 430px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.tags span {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+}
+
+.work-note {
+  border-top: 1px solid var(--border);
+  padding: 80px var(--pad) 140px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.work-note p {
+  max-width: 400px;
+  font-size: 15px;
+}
+
+@media(max-width:800px) {
+  .page-hero {
+    min-height: 65vh;
+    padding-top: 70px;
+  }
+
+  .page-hero p {
+    align-self: start;
+    margin-top: 50px;
+  }
+
+  .work-item {
+    padding-top: 75px;
+  }
+
+  .work-browser-content {
+    min-height: 480px;
+    padding: 70px 30px;
+  }
+
+  .work-browser-content h2 {
+    font-size: clamp(48px, 14vw, 75px);
+  }
+
+  .work-info {
+    grid-template-columns: 1fr;
     gap: 25px;
-    padding: 0 18px;
-    background: #e9e8e2;
-    border-bottom: 1px solid rgba(17, 17, 15, 0.1);
-}
+  }
 
-.browser-dots {
-    display: flex;
-    gap: 6px;
-}
+  .work-note {
+    display: block;
+  }
 
-.browser-dots span {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: rgba(17, 17, 15, 0.25);
-}
-
-.browser-address {
-    flex: 1;
-    max-width: 430px;
-    padding: 6px 14px;
-    border-radius: 3px;
-    background: rgba(255, 255, 255, 0.6);
-    font-family: "DM Mono", monospace;
-    font-size: 0.6rem;
-    color: #77766f;
-}
-
-.medinova-preview {
-    min-height: 560px;
-    background: #f7f7f2;
-    color: #172018;
-}
-
-.medinova-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 42px;
-    border-bottom: 1px solid rgba(23, 32, 24, 0.12);
-}
-
-.medinova-nav strong {
-    font-family: "Syne", sans-serif;
-    font-size: 1.15rem;
-}
-
-.medinova-nav > div {
-    display: flex;
-    gap: 28px;
-    font-size: 0.65rem;
-    color: #777b76;
-}
-
-.medinova-nav button {
-    border: 0;
-    padding: 11px 17px;
-    background: #172018;
-    color: #f7f7f2;
-    font-family: "Manrope", sans-serif;
-    font-size: 0.65rem;
-}
-
-.medinova-content {
-    min-height: 510px;
-    display: grid;
-    grid-template-columns: 1fr 0.8fr;
-    align-items: center;
-    gap: 40px;
-    padding: 70px 8%;
-}
-
-.medinova-copy small {
-    font-family: "DM Mono", monospace;
-    font-size: 0.58rem;
-    letter-spacing: 0.08em;
-    color: #777b76;
-}
-
-.medinova-copy h3 {
-    margin: 24px 0;
-    font-family: "Syne", sans-serif;
-    font-size: clamp(3rem, 5vw, 5.7rem);
-    line-height: 0.88;
-    letter-spacing: -0.055em;
-    font-weight: 500;
-}
-
-.medinova-copy p {
-    max-width: 370px;
-    color: #667069;
-    line-height: 1.6;
-    font-size: 0.9rem;
-}
-
-.medinova-link {
-    display: inline-block;
+  .work-note p {
     margin-top: 25px;
-    font-family: "DM Mono", monospace;
-    font-size: 0.65rem;
-}
-
-.medinova-shape {
-    width: min(30vw, 340px);
-    aspect-ratio: 1;
-    margin-left: auto;
-    display: grid;
-    place-items: center;
-    border-radius: 50% 50% 4px 50%;
-    background: #d9e6d5;
-    transform: rotate(-9deg);
-}
-
-.shape-inner {
-    width: 58%;
-    aspect-ratio: 1;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background: #a7c29f;
-    font-family: "Syne", sans-serif;
-    font-size: 4rem;
-    color: #f7f7f2;
-}
-
-.featured-project-info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
-    margin-top: 70px;
-}
-
-.project-info-block {
-    padding-top: 22px;
-    border-top: 1px solid var(--line);
-}
-
-.project-info-block p {
-    max-width: 350px;
-    margin: 22px 0 0;
-    color: var(--muted);
-    line-height: 1.7;
-}
-
-.work-thinking {
-    background: var(--paper-dark);
-}
-
-.work-thinking-content {
-    max-width: 1050px;
-    padding-top: 100px;
-}
-
-.work-thinking-content h2 {
-    margin: 0;
-    font-family: "Syne", sans-serif;
-    font-size: clamp(3rem, 6vw, 6.5rem);
-    line-height: 0.9;
-    letter-spacing: -0.055em;
-    font-weight: 500;
-}
-
-.work-thinking-content h2 em {
-    font-style: normal;
-    color: var(--muted);
-}
-
-.work-thinking-content > p {
-    max-width: 480px;
-    margin: 70px 0 0 auto;
-    color: var(--muted);
-    line-height: 1.75;
-}
-
-.future-work-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 90px;
-}
-
-.future-card {
-    min-height: 390px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 35px;
-    border: 1px solid var(--line);
-    background: var(--paper-dark);
-}
-
-.future-card > span:first-child {
-    font-family: "DM Mono", monospace;
-    font-size: 0.7rem;
-    color: var(--muted);
-}
-
-.future-card small {
-    font-family: "DM Mono", monospace;
-    font-size: 0.6rem;
-    color: var(--muted);
-}
-
-.future-card h3 {
-    margin: 18px 0;
-    font-family: "Syne", sans-serif;
-    font-size: clamp(2rem, 3vw, 3rem);
-    line-height: 0.95;
-    letter-spacing: -0.04em;
-    font-weight: 500;
-}
-
-.future-card p {
-    max-width: 320px;
-    margin: 0;
-    color: var(--muted);
-    line-height: 1.6;
-}
-
-.future-arrow {
-    align-self: flex-end;
-    font-size: 1.5rem;
-}
-
-.future-card-dark {
-    background: var(--ink);
-    color: var(--paper);
-    border-color: var(--ink);
-}
-
-.future-card-dark > span:first-child,
-.future-card-dark small {
-    color: rgba(244, 243, 238, 0.5);
-}
-
-.future-card-dark p {
-    color: rgba(244, 243, 238, 0.6);
-}
-
-.work-cta {
-    min-height: 75vh;
-    display: flex;
-    align-items: center;
-    background: var(--ink);
-    color: var(--paper);
-}
-
-.work-cta-content h2 {
-    margin: 38px 0 60px;
-    font-family: "Syne", sans-serif;
-    font-size: clamp(3.5rem, 7vw, 7.5rem);
-    line-height: 0.9;
-    letter-spacing: -0.055em;
-    font-weight: 500;
-}
-
-.work-cta-content h2 em {
-    font-style: normal;
-    color: var(--accent);
-}
-
-.work-cta .mono-label {
-    color: rgba(244, 243, 238, 0.55);
-}
-
-.work-cta .contact-link {
-    color: var(--paper);
-    border-color: rgba(244, 243, 238, 0.3);
-}
-
-.work-cta .contact-link:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-}
-
-@media (max-width: 800px) {
-    .work-hero {
-        min-height: 72vh;
-    }
-
-    .work-hero-content {
-        margin-top: 80px;
-    }
-
-    .work-intro {
-        margin-left: 0;
-    }
-
-    .featured-project-heading {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .medinova-nav > div {
-        display: none;
-    }
-
-    .medinova-nav {
-        padding: 22px;
-    }
-
-    .medinova-content {
-        grid-template-columns: 1fr;
-        padding: 60px 7%;
-    }
-
-    .medinova-shape {
-        width: 230px;
-        margin: 10px auto 0;
-    }
-
-    .featured-project-info {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .future-work-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 560px) {
-    .work-title {
-        font-size: clamp(3.5rem, 17vw, 5.5rem);
-    }
-
-    .featured-project-heading h2 {
-        font-size: 3.5rem;
-    }
-
-    .browser-bar {
-        height: 42px;
-    }
-
-    .browser-address {
-        display: none;
-    }
-
-    .medinova-preview {
-        min-height: 500px;
-    }
-
-    .medinova-content {
-        min-height: 450px;
-    }
-
-    .medinova-copy h3 {
-        font-size: 3rem;
-    }
-
-    .medinova-nav button {
-        font-size: 0.55rem;
-        padding: 9px 11px;
-    }
-
-    .future-card {
-        min-height: 320px;
-        padding: 28px;
-    }
+  }
 }
