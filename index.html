@@ -5,152 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Kasyven — Clarity creates credibility.</title>
-
     <meta
         name="description"
-        content="Kasyven is an independent digital studio creating clear, considered websites and digital experiences."
+        content="Kasyven is an independent digital studio creating clear, considered websites for ambitious businesses."
     >
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- JavaScript -->
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =====================================================
-         HEADER
-    ====================================================== -->
-
+    <!-- HEADER -->
     <header class="site-header">
-        <div class="header-inner">
+        <a href="#" class="logo">KASYVEN<span>®</span></a>
 
-            <a href="index.html" class="logo" aria-label="Kasyven home">
-                Kasyven
-            </a>
+        <nav class="nav">
+            <a href="#work">Work</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact" class="nav-contact">Let's talk <span>↗</span></a>
+        </nav>
 
-            <nav class="main-nav" aria-label="Main navigation">
-                <a href="work.html">Work</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About</a>
-                <a href="contact.html" class="nav-contact">
-                    Let's talk
-                </a>
-            </nav>
-
-            <button
-                class="menu-toggle"
-                type="button"
-                aria-label="Open menu"
-                aria-expanded="false"
-            >
-                <span></span>
-            </button>
-
-        </div>
+        <button class="menu-button" aria-label="Open menu">
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
 
     <main>
 
-        <!-- =================================================
-             HERO
-        ================================================== -->
-
+        <!-- HERO -->
         <section class="hero">
 
-            <div class="container">
+            <div class="hero-top">
+                <p class="eyebrow">Independent digital studio</p>
 
-                <div class="hero-grid">
+                <p class="hero-location">
+                    Pune, India<br>
+                    2026
+                </p>
+            </div>
 
-                    <div class="hero-main">
+            <div class="hero-content">
 
-                        <div class="hero-meta reveal">
-                            <span>Independent digital studio</span>
-                            <span>Pune · India</span>
-                        </div>
+                <div class="hero-title-wrap">
+                    <p class="hero-index">01 / 05</p>
 
-                        <h1 class="hero-title reveal">
-                            <span>Clarity</span>
-                            <span>creates</span>
-                            <span class="accent">credibility.</span>
-                        </h1>
-
-                        <p class="hero-description reveal">
-                            Kasyven creates clear, considered digital
-                            experiences for businesses that care about
-                            how they are perceived.
-                        </p>
-
-                    </div>
-
-
-                    <div class="hero-side reveal">
-
-                        <div class="hero-side-label eyebrow">
-                            What we believe
-                        </div>
-
-                        <p>
-                            Good digital work should make a business
-                            easier to understand, easier to trust,
-                            and harder to forget.
-                        </p>
-
-                    </div>
-
+                    <h1>
+                        Clarity<br>
+                        creates<br>
+                        <em>credibility.</em>
+                    </h1>
                 </div>
 
+                <div class="hero-side">
 
-                <div class="hero-footer reveal">
+                    <p class="hero-description">
+                        Kasyven creates thoughtful digital experiences
+                        for businesses that want to be understood,
+                        remembered and trusted.
+                    </p>
 
-                    <span>
-                        Design · Development · Digital identity
-                    </span>
-
-                    <a href="#work" class="scroll-link">
-                        Explore work
-                        <span></span>
+                    <a href="#work" class="text-link">
+                        Explore selected work
+                        <span>↓</span>
                     </a>
 
                 </div>
 
             </div>
 
+            <div class="hero-bottom">
+                <span>Scroll to explore</span>
+                <span class="hero-line"></span>
+                <span>01</span>
+            </div>
+
         </section>
 
 
-        <!-- =================================================
-             STATEMENT
-        ================================================== -->
+        <!-- STATEMENT -->
+        <section class="statement" id="about">
 
-        <section class="statement section">
+            <div class="section-meta">
+                <span>02</span>
+                <span>Belief</span>
+            </div>
 
-            <div class="container">
+            <div class="statement-content">
 
-                <div class="statement-grid">
+                <p class="statement-small">
+                    The internet is full of noise.
+                </p>
 
-                    <div class="section-label reveal">
-                        <span>01</span>
-                        <span>Belief</span>
-                    </div>
+                <h2>
+                    Good digital work should make
+                    <span>things obvious.</span>
+                </h2>
 
-                    <p class="statement-copy reveal">
-                        Good digital work should make things
-                        <em>obvious.</em>
+                <div class="statement-bottom">
+                    <p>
+                        We combine strategy, design and technology
+                        to turn complicated ideas into clear digital
+                        experiences.
                     </p>
 
+                    <span class="statement-mark">✳</span>
                 </div>
 
             </div>
@@ -158,182 +127,156 @@
         </section>
 
 
-        <!-- =================================================
-             WORK PREVIEW
-        ================================================== -->
+        <!-- WORK -->
+        <section class="work" id="work">
 
-        <section class="work-preview section" id="work">
+            <div class="section-heading">
 
-            <div class="container">
+                <div class="section-meta">
+                    <span>03</span>
+                    <span>Selected work</span>
+                </div>
 
-                <div class="work-intro">
+                <p>
+                    One project at a time.<br>
+                    Built with intention.
+                </p>
+
+            </div>
+
+
+            <article class="project">
+
+                <div class="project-visual">
+
+                    <div class="browser">
+
+                        <div class="browser-top">
+                            <div class="browser-dots">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+
+                            <span>medinova.health</span>
+                        </div>
+
+                        <div class="browser-main">
+
+                            <div class="browser-label">
+                                MEDINOVA / 01
+                            </div>
+
+                            <h3>
+                                Healthcare,
+                                made clearer.
+                            </h3>
+
+                            <div class="browser-rule"></div>
+
+                            <div class="browser-bottom">
+                                <span>PRIVATE CLINIC</span>
+                                <span>EST. 2026</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-info">
 
                     <div>
-                        <div class="section-label reveal">
-                            <span>02</span>
-                            <span>Selected work</span>
-                        </div>
+                        <p class="project-number">01</p>
+
+                        <h3>MediNova</h3>
+
+                        <p class="project-type">
+                            Healthcare website concept
+                        </p>
                     </div>
 
-                    <p class="reveal">
-                        A small selection of digital work built around
-                        clarity, intention and thoughtful interaction.
-                    </p>
+                    <div class="project-description">
+                        <p>
+                            A calm, structured digital experience
+                            designed to make healthcare information
+                            easier to understand and act on.
+                        </p>
+
+                        <a href="#" class="text-link">
+                            View project
+                            <span>↗</span>
+                        </a>
+                    </div>
 
                 </div>
 
+            </article>
 
-                <a href="work.html" class="work-card reveal">
-
-                    <div class="work-visual">
-
-                        <div class="work-browser">
-
-                            <div class="browser-bar">
-
-                                <div class="browser-dots">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-
-                            </div>
+        </section>
 
 
-                            <div class="browser-content">
+        <!-- SERVICES -->
+        <section class="services" id="services">
 
-                                <div class="browser-content-inner">
+            <div class="section-meta">
+                <span>04</span>
+                <span>Services</span>
+            </div>
 
-                                    <div class="browser-kicker">
-                                        Modern healthcare
-                                    </div>
+            <div class="services-content">
 
-                                    <h2 class="browser-title">
-                                        Better care,
-                                        made simpler.
-                                    </h2>
+                <div class="services-intro">
+                    <p>
+                        Digital work should have a reason
+                        behind every decision.
+                    </p>
+                </div>
 
-                                    <div class="browser-line"></div>
+                <div class="service-list">
 
-                                    <p class="browser-small">
-                                        Thoughtful healthcare for everyday
-                                        life, built around people.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="work-info">
+                    <div class="service">
+                        <span>01</span>
 
                         <div>
-
-                            <div class="work-name">
-                                MediNova
-                            </div>
-
-                            <div class="work-type">
-                                Healthcare · Website concept
-                            </div>
-
+                            <h3>Web Design</h3>
+                            <p>
+                                Interfaces that make a business
+                                easier to understand and trust.
+                            </p>
                         </div>
 
-                        <div class="work-arrow">
-                            ↗
-                        </div>
-
+                        <b>↗</b>
                     </div>
 
-                </a>
+                    <div class="service">
+                        <span>02</span>
 
-            </div>
+                        <div>
+                            <h3>Web Development</h3>
+                            <p>
+                                Fast, responsive websites built
+                                around real content and users.
+                            </p>
+                        </div>
 
-        </section>
+                        <b>↗</b>
+                    </div>
 
-
-        <!-- =================================================
-             SERVICES
-        ================================================== -->
-
-        <section class="services section">
-
-            <div class="container">
-
-                <div class="services-grid">
-
-                    <div class="section-label reveal">
+                    <div class="service">
                         <span>03</span>
-                        <span>What we do</span>
-                    </div>
 
-
-                    <div class="services-list">
-
-                        <div class="service-item reveal">
-
-                            <span class="service-number">
-                                01
-                            </span>
-
-                            <div>
-                                <h3 class="service-name">
-                                    Web design
-                                </h3>
-                            </div>
-
-                            <p class="service-description">
-                                Interfaces with strong hierarchy,
-                                clear navigation and a distinct
-                                visual voice.
+                        <div>
+                            <h3>Digital Direction</h3>
+                            <p>
+                                Helping businesses decide what
+                                their digital presence should say.
                             </p>
-
                         </div>
 
-
-                        <div class="service-item reveal">
-
-                            <span class="service-number">
-                                02
-                            </span>
-
-                            <div>
-                                <h3 class="service-name">
-                                    Development
-                                </h3>
-                            </div>
-
-                            <p class="service-description">
-                                Fast, responsive websites built with
-                                thoughtful structure and reliable code.
-                            </p>
-
-                        </div>
-
-
-                        <div class="service-item reveal">
-
-                            <span class="service-number">
-                                03
-                            </span>
-
-                            <div>
-                                <h3 class="service-name">
-                                    Digital identity
-                                </h3>
-                            </div>
-
-                            <p class="service-description">
-                                Digital systems that make a business
-                                recognizable without making it loud.
-                            </p>
-
-                        </div>
-
+                        <b>↗</b>
                     </div>
 
                 </div>
@@ -343,78 +286,48 @@
         </section>
 
 
-        <!-- =================================================
-             APPROACH
-        ================================================== -->
+        <!-- APPROACH -->
+        <section class="approach">
 
-        <section class="approach section">
+            <div class="section-meta">
+                <span>05</span>
+                <span>Approach</span>
+            </div>
 
-            <div class="container">
+            <div class="approach-content">
+
+                <h2>
+                    Less decoration.<br>
+                    More <em>intention.</em>
+                </h2>
 
                 <div class="approach-grid">
 
-                    <div class="section-label reveal">
-                        <span>04</span>
-                        <span>Approach</span>
+                    <div>
+                        <span>01</span>
+                        <h3>Understand</h3>
+                        <p>
+                            We start with the business, the people
+                            and the problem before touching the design.
+                        </p>
                     </div>
 
+                    <div>
+                        <span>02</span>
+                        <h3>Shape</h3>
+                        <p>
+                            We turn complexity into a visual system
+                            with a clear hierarchy and personality.
+                        </p>
+                    </div>
 
-                    <div class="approach-list">
-
-                        <div class="approach-item reveal">
-
-                            <span class="approach-number">
-                                01
-                            </span>
-
-                            <h3 class="approach-title">
-                                Understand
-                            </h3>
-
-                            <p class="approach-copy">
-                                Before designing anything, we understand
-                                the business, the audience and the actual
-                                problem.
-                            </p>
-
-                        </div>
-
-
-                        <div class="approach-item reveal">
-
-                            <span class="approach-number">
-                                02
-                            </span>
-
-                            <h3 class="approach-title">
-                                Shape
-                            </h3>
-
-                            <p class="approach-copy">
-                                Structure comes before decoration.
-                                Every element earns its place.
-                            </p>
-
-                        </div>
-
-
-                        <div class="approach-item reveal">
-
-                            <span class="approach-number">
-                                03
-                            </span>
-
-                            <h3 class="approach-title">
-                                Build
-                            </h3>
-
-                            <p class="approach-copy">
-                                The final experience is designed,
-                                developed and refined as one system.
-                            </p>
-
-                        </div>
-
+                    <div>
+                        <span>03</span>
+                        <h3>Build</h3>
+                        <p>
+                            The final experience is designed to work,
+                            not just look good in a presentation.
+                        </p>
                     </div>
 
                 </div>
@@ -424,72 +337,53 @@
         </section>
 
 
-        <!-- =================================================
-             MANIFESTO
-        ================================================== -->
+        <!-- MANIFESTO -->
+        <section class="manifesto">
 
-        <section class="manifesto section">
+            <div class="manifesto-mark">K</div>
 
-            <div class="container">
+            <p class="manifesto-label">A note from Kasyven</p>
 
-                <div class="manifesto-grid">
+            <h2>
+                Make it clear.<br>
+                Make it useful.<br>
+                Make it <em>matter.</em>
+            </h2>
 
-                    <div class="section-label reveal">
-                        <span>05</span>
-                        <span>Manifesto</span>
-                    </div>
-
-
-                    <p class="manifesto-copy reveal">
-                        We don't believe a website needs to shout
-                        to be remembered.
-                        <span class="dim">
-                            It needs to be clear enough to understand,
-                            thoughtful enough to trust,
-                            and distinct enough to stay with you.
-                        </span>
-                    </p>
-
-                </div>
-
-            </div>
+            <p class="manifesto-copy">
+                Because attention is limited.
+                Clarity isn't.
+            </p>
 
         </section>
 
 
-        <!-- =================================================
-             CONTACT
-        ================================================== -->
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
 
-        <section class="contact section">
+            <div class="section-meta">
+                <span>06</span>
+                <span>Contact</span>
+            </div>
 
-            <div class="container">
+            <div class="contact-content">
 
-                <div class="contact-grid">
+                <p class="contact-kicker">
+                    Have something worth building?
+                </p>
 
-                    <div class="section-label reveal">
-                        <span>06</span>
-                        <span>Start a project</span>
-                    </div>
+                <h2>
+                    Let's make<br>
+                    it <em>clear.</em>
+                </h2>
 
-
-                    <div class="reveal">
-
-                        <h2 class="contact-title">
-                            <span>Let's make</span>
-                            <span>it clear.</span>
-                        </h2>
-
-                        <a
-                            href="contact.html"
-                            class="contact-link"
-                        >
-                            Start a conversation
-                        </a>
-
-                    </div>
-
-                </div>
+                <a
+                    href="mailto:kasyven.creates@gmail.com"
+                    class="contact-email"
+                >
+                    kasyven.creates@gmail.com
+                    <span>↗</span>
+                </a>
 
             </div>
 
@@ -498,33 +392,41 @@
     </main>
 
 
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
+    <!-- FOOTER -->
+    <footer class="footer">
 
-    <footer class="site-footer">
+        <div class="footer-brand">
+            KASYVEN<span>®</span>
+        </div>
 
-        <div class="footer-inner">
+        <p>
+            Clarity creates credibility.
+        </p>
 
-            <span class="footer-copy">
-                © <span data-year></span> Kasyven
-            </span>
-
-            <div class="footer-links">
-
-                <a href="work.html">
-                    Work
-                </a>
-
-                <a href="contact.html">
-                    Let's talk
-                </a>
-
-            </div>
-
+        <div class="footer-right">
+            <span>© 2026</span>
+            <span>Pune, India</span>
         </div>
 
     </footer>
+
+
+    <script>
+        const menuButton = document.querySelector(".menu-button");
+        const nav = document.querySelector(".nav");
+
+        menuButton.addEventListener("click", () => {
+            nav.classList.toggle("open");
+            menuButton.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav a").forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("open");
+                menuButton.classList.remove("active");
+            });
+        });
+    </script>
 
 </body>
 </html>
