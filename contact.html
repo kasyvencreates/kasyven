@@ -1,69 +1,154 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Let's talk — Kasyven</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Start a project with Kasyven. Get in touch about website design, development or digital direction.">
+    <title>Contact — Kasyven</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
 <header class="site-header">
-  <a class="brand" href="index.html">KASYVEN<span>®</span></a>
-  <nav class="nav">
-    <a href="work.html">Work</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a class="nav-talk" href="contact.html">Let's talk <span>↗</span></a>
-  </nav>
-  <button class="menu-toggle"><span></span><span></span></button>
+    <a class="wordmark" href="index.html">KASYVEN<span>®</span></a>
+    <span class="header-note">Independent digital studio</span>
+    <nav class="main-nav" aria-label="Main navigation">
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a class="nav-contact" href="contact.html" aria-current="page">Let's talk <span>↗</span></a>
+    </nav>
 </header>
 
-<main class="contact-page">
+<main>
+    <section class="contact-hero">
+        <div class="eyebrow"><span>01 / GET IN TOUCH</span><span>NEW PROJECTS · OPEN CONVERSATION</span></div>
 
-<section class="contact-hero">
-  <div class="section-index">01 / Contact</div>
+        <div class="contact-heading">
+            <h1>Have a good<br>thing in <span>mind?</span></h1>
+            <div class="heading-aside">
+                <span class="aside-mark">↘</span>
+                <p>Tell us what you're working on, what isn't working or what you'd like to make possible.</p>
+            </div>
+        </div>
 
-  <div>
-    <p>Have something worth building?</p>
-    <h1>Let's make<br><em>it clear.</em></h1>
-  </div>
+        <div class="hero-bottom">
+            <span>NO PRESSURE.</span>
+            <span>JUST A CONVERSATION.</span>
+        </div>
+    </section>
 
-  <a class="big-email" href="mailto:kasyven.creates@gmail.com">
-    kasyven.creates@gmail.com
-    <span>↗</span>
-  </a>
-</section>
+    <section class="contact-main">
+        <div class="contact-intro">
+            <span class="mini-label">02 / START HERE</span>
+            <h2>Let's understand<br>what you need.</h2>
+            <p>
+                Share a few details about your project. We'll use them to understand
+                your goals and the kind of support you're looking for.
+            </p>
 
-<section class="contact-details">
-  <div>
-    <span>Based in</span>
-    <p>Pune, India</p>
-  </div>
+            <div class="contact-detail">
+                <span class="detail-label">EMAIL</span>
+                <a href="mailto:kasyven.creates@gmail.com">kasyven.creates@gmail.com <span>↗</span></a>
+            </div>
 
-  <div>
-    <span>Working on</span>
-    <p>Websites · Digital experiences · Ideas</p>
-  </div>
+            <div class="contact-detail">
+                <span class="detail-label">BASED IN</span>
+                <p>Pune, India · Working remotely</p>
+            </div>
 
-  <div>
-    <span>Response</span>
-    <p>Usually within 1–2 working days.</p>
-  </div>
-</section>
+            <div class="contact-detail">
+                <span class="detail-label">GOOD FIT FOR</span>
+                <p>Web design, development and digital direction.</p>
+            </div>
+        </div>
 
+        <form class="contact-form" id="contact-form">
+            <div class="form-heading">
+                <span class="mini-label">PROJECT ENQUIRY</span>
+                <span class="form-index">K / 001</span>
+            </div>
+
+            <label for="name">01 — Your name</label>
+            <input type="text" id="name" name="name" placeholder="What should we call you?" required>
+
+            <label for="email">02 — Your email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="service">03 — What do you need?</label>
+            <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Web Design">Web design</option>
+                <option value="Web Development">Web development</option>
+                <option value="Design and Development">Design + development</option>
+                <option value="Digital Direction">Digital direction</option>
+                <option value="Not Sure Yet">Not sure yet</option>
+            </select>
+
+            <label for="budget">04 — Approximate budget</label>
+            <select id="budget" name="budget">
+                <option value="" selected>Prefer to discuss</option>
+                <option value="Under ₹15,000">Under ₹15,000</option>
+                <option value="₹15,000–₹30,000">₹15,000–₹30,000</option>
+                <option value="₹30,000–₹60,000">₹30,000–₹60,000</option>
+                <option value="₹60,000+">₹60,000+</option>
+            </select>
+
+            <label for="message">05 — Tell us about it</label>
+            <textarea id="message" name="message" rows="5" placeholder="What are you trying to build or improve?" required></textarea>
+
+            <button type="submit">Prepare email <span>↗</span></button>
+            <p class="form-note">This opens your email app with your enquiry prepared for review.</p>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <section class="contact-close">
+        <span class="mini-label">ONE LAST THING</span>
+        <h2>Good work begins<br>with a <span>clear conversation.</span></h2>
+        <a href="mailto:kasyven.creates@gmail.com">Or email us directly <span>↗</span></a>
+    </section>
 </main>
 
 <footer class="site-footer">
-  <div class="brand">KASYVEN<span>®</span></div>
-  <div>Clarity creates credibility.</div>
-  <div>© 2026 Kasyven</div>
+    <a class="footer-brand" href="index.html">KASYVEN<span>®</span></a>
+    <span class="footer-note">Clarity creates credibility.</span>
+    <div class="footer-links">
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <span class="footer-copy">© 2026 KASYVEN</span>
 </footer>
 
-<script src="js/script.js"></script>
+<script>
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const data = new FormData(this);
+    const subject = encodeURIComponent("Kasyven project enquiry — " + data.get("service"));
+    const body = encodeURIComponent(
+        "Hello Kasyven,\n\n" +
+        "Name: " + data.get("name") + "\n" +
+        "Email: " + data.get("email") + "\n" +
+        "Service: " + data.get("service") + "\n" +
+        "Budget: " + (data.get("budget") || "Prefer to discuss") + "\n\n" +
+        "Project details:\n" + data.get("message") + "\n\n" +
+        "Sent through the Kasyven website."
+    );
+
+    document.getElementById("form-status").textContent =
+        "Your email app should open with the enquiry details.";
+
+    window.location.href =
+        "mailto:kasyven.creates@gmail.com?subject=" + subject + "&body=" + body;
+});
+</script>
+
 </body>
 </html>
